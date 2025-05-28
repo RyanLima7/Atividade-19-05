@@ -15,7 +15,7 @@ public class Sistema_votacao {
 		System.out.println("\nAbaixo digite o nome dos mascotes");
 		for (int i = 0; i < Mascotes; i++) {
 			System.out.print("\nMascote n° " + (i + 1) + ": ");
-			nomes[i] = sc.nextLine().trim();
+			nomes[i] = sc.nextLine();
 			votos[i] = 0;
 		}
 
@@ -23,7 +23,7 @@ public class Sistema_votacao {
 		System.out.println("Se desejar encerrar, digite 'fim')");
 		for (String entrada = ""; !entrada.equalsIgnoreCase("fim");) {
 			System.out.print("Seu voto: ");
-			entrada = sc.nextLine().trim();
+			entrada = sc.nextLine();
 
 			if (!entrada.equalsIgnoreCase("fim")) {
 				boolean encontrado = false;
